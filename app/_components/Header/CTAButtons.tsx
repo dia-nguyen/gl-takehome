@@ -20,7 +20,7 @@ import CTAButton from "../Buttons/CTAButton";
  */
 export default function CTAButtons({links}:CTAButtonsProps){
   return (
-    <div className="flex gap-4">
+    <div className="flex gap-4 justify-center">
       {links.map((link: CTAButtonProps) => (
         <CTAButton label={link.label} href={link.href} variant={link.variant} key={link.label}/>
       ))}

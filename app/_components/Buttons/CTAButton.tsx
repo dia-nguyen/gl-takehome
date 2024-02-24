@@ -23,13 +23,18 @@ import Link from "next/link";
  * Header -> CTAButton
  */
 export default function CTAButton({ href, label, variant }: CTAButtonProps) {
-  const variants = {
-    primary: "bg-[#E3DFD6] text-[#6A5930]",
-    secondary: "border border-[#6A5930] text-[#6A5930]",
-  }
+  const variants: variantsType = {
+    primary: "bg-[#E3DFD6] text-[#6A5930] font-medium",
+    secondary: "border border-[#6A5930] text-[#6A5930] font-medium",
+    dark: "bg-[#2F2F2F] text-white"
+  };
   return (
-    <Link href={href} className={`rounded-lg px-6 py-2 font-medium ${variants[variant]}`}>{label}</Link>
-  )
+    <Link href={href} className={`rounded-lg px-6 py-2 ${variants[variant]}`}>{label}</Link>
+  );
 }
 
-
+type variantsType = {
+  primary: string;
+  secondary: string;
+  dark: string;
+};

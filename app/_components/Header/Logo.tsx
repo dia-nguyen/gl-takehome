@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 /**
  * Logo Component
@@ -12,8 +11,14 @@ import Link from "next/link";
  * Usage: <Logo/>
  * Header -> Logo
  */
-export default function Logo(){
-  return(
-    <Image src="/assets/logo.png" alt="Generation Lab" width={100} height={30}/>
-  )
+export default function Logo() {
+  return (
+    <Image src="/assets/logo.png"
+      sizes="100vw"
+      alt="Generation Lab"
+      className="h-[40px] w-auto"
+      width={100}
+      priority
+      height={40} />
+  );
 }

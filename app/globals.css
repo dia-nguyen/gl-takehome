@@ -17,3 +17,12 @@ body {
     text-wrap: balance;
   }
 }
+
+.flex-center {
+  @apply flex items-center;
+}
+
+
+.recharts-surface {
+  overflow: visible;
+}

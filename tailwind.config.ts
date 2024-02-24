@@ -6,10 +6,23 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: [
+    'bg-purple',
+    'bg-yellow',
+    'bg-teal',
+    'bg-gray',
+  ],
   theme: {
     extend: {
       colors: {
         base: '#3D3D3D', // Adding a custom color named 'base'
+        purple: '#8083CC',
+        yellow: '#F3C82E',
+        teal: '#39CDC4',
+        light: '#F9F9FA',
+        gray: "#F0EFEF",
+        orange: "#DE6430",
+        brown: "#7D2703",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

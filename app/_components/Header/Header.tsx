@@ -1,8 +1,7 @@
 import Logo from "./Logo";
-import { HEADER_CTA_LINKS, NAVIGATION_LINKS } from "@/app/_utils/staticData";
+import { NAVIGATION_LINKS } from "@/app/_utils/staticData";
 import NavigationLinks from "./NavigationLinks";
 import UserIcon from "./UserIcon";
-import CTAButtons from "./CTAButtons";
 
 /**
  * Header Component
@@ -21,14 +20,13 @@ import CTAButtons from "./CTAButtons";
  */
 export default function Header() {
   return (
-    <header className="bg-white">
-      <div className="container justify-between mx-auto flex items-center">
+    <header className="bg-white md:relative fixed top-0 w-full z-30">
+      <div className="container md:max-w-5xl max-w-md md:py-0 py-2 justify-between mx-auto flex items-center">
         <div className="flex-grow">
           <Logo />
         </div>
-        <div className="flex-shrink-0 flex items-center gap-8">
+        <div className="flex-shrink-0 flex items-center md:gap-8 gap-4">
           <NavigationLinks links={NAVIGATION_LINKS} />
-          <CTAButtons links={HEADER_CTA_LINKS}/>
           <UserIcon/>
         </div>
       </div>
