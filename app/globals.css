@@ -26,3 +26,41 @@ body {
 .recharts-surface {
   overflow: visible;
 }
+
+.skeleton {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
+
+.shimmer {
+  background: linear-gradient(90deg, #e0e0e0 25%, #f8f8f8 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.fade-in {
+  animation: fadeInAnimation 1s ease-out forwards;
+}
+
+.fade-out {
+  animation: fadeOutAnimation 0.5s ease-out forwards;
+}
+
+@keyframes fadeInAnimation {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOutAnimation {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}

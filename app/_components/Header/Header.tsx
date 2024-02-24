@@ -20,7 +20,7 @@ import UserIcon from "./UserIcon";
  */
 export default function Header() {
   return (
-    <header className="bg-white md:relative fixed top-0 w-full z-30">
+    <header className="bg-white md:relative fixed top-0 w-full z-30 mb-10 md:mb-0">
       <div className="container md:max-w-5xl max-w-md md:py-0 py-2 justify-between mx-auto flex items-center">
         <div className="flex-grow">
           <Logo />

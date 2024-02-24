@@ -7,7 +7,7 @@ import LogisticTrackSection from "./LogisticTrackerSection/LogisticTrackerSectio
  */
 export default function ReportDashboard() {
   return (
-    <main className="container md:max-w-5xl max-w-md flex-grow mx-auto my-10">
+    <main className="container md:max-w-5xl max-w-sm flex-grow mx-auto my-10 pt-12 md:mt-0">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <BioAgeSection />
         <DailyTodosSection />

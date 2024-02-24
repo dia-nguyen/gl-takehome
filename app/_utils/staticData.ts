@@ -63,10 +63,6 @@ export const DEFAULT_TODO_LIST = [
   },
 ] as TodoListProps[];
 
-export const BIO_AGE_DATA = [
-  { type: "chronoAge", age: 40 },
-  { type: "bioAge", age: 50 },
-];
 
 export const AGING_FACTORS_REPORT = [
   { name: "Inflamatory Regulation", value: 100, color: "#DE6430" },

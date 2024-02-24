@@ -17,7 +17,7 @@ export default function BioAgeSection() {
       handleClick={() => setIsExpanded(prev => !prev)}
     >
       {isExpanded && (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-35">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-35 gap-y-5">
           <BioAgeOverview ages={AGE_DATA} />
           <ChronoTime ages={AGE_DATA} />
           <TopAgingFactors />

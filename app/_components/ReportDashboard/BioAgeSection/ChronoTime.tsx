@@ -10,7 +10,7 @@ export default function ChronoTime({ ages }: AgeProps) {
 
   return (
     <Subsection title="Chronological Time">
-      <div className="p-5 flex-center flex-col">
+      <div className="p-5 flex-center flex-col h-[150px] justify-end">
         <ChronoTimePie agingRate={agingRate} />
         <p className="text-xs mt-4 mx-3 text-brown">You are aging {agingRate.toFixed(0)}% of chronological time</p>
       </div>
