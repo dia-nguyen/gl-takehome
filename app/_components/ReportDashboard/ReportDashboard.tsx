@@ -3,7 +3,7 @@ import DailyTodosSection from "./DailyTodosSection/DailyTodosSection";
 import LogisticTrackSection from "./LogisticTrackerSection/LogisticTrackerSection";
 
 /**
- * TODO: doc string
+ * Report Dashboard
  */
 export default function ReportDashboard() {
   return (

@@ -1,6 +1,9 @@
 import { PieChart, Pie, Cell } from 'recharts';
 import { AGING_FACTORS_REPORT as data } from '@/app/_utils/staticData';
 
+/**
+ * Top Aging Factors Pie
+ */
 export default function TopAgingFactorsPie() {
   return (
     <>

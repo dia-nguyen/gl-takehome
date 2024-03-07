@@ -3,7 +3,9 @@ import TaskChecklist from "./TaskChecklist";
 import Accordion from "../../Accordion/Accordion";
 import { TaskAccordionProps, TaskType, TodoTask } from "@/types";
 
-//TODO: docstring
+/**
+ * Accordion for rendering tasks
+ */
 export default function TaskAccordion({ type, label, tasks, handleChange }: TaskAccordionProps) {
   const { icon, color } = TASK_TYPE_ICONS[type];
   const completedTasks = tasks.filter((task) => task.isComplete);

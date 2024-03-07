@@ -1,7 +1,9 @@
 import { TaskCheckListProps, TodoTask } from "@/types";
 
+/**
+ * Task Checklist
+ */
 export default function TaskChecklist({ tasks, type, handleChange }: TaskCheckListProps) {
-
   return (
     <div className="grid gap-2">
       {tasks.map((item: TodoTask, index: number) => (

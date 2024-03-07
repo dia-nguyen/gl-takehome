@@ -6,6 +6,9 @@ import NumberLineChart from "./NumberLineChart";
 import gsap from "gsap";
 import { useEffect } from "react";
 
+/**
+ * Bio Age Numberline
+ */
 export default function BioAgeNumberLine({ ages }: AgeProps) {
   useEffect(() => {
     gsap.fromTo('#bar-wrapper', { width: '0%' }, { width: '100%', duration: 1.5, ease: 'power3.out' });

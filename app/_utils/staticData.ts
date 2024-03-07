@@ -69,6 +69,6 @@ export const AGING_FACTORS_REPORT = [
 ];
 
 export const AGE_DATA = {
-  chronoAge: 40,
+  chronoAge: 30,
   bioAge: 50
 }

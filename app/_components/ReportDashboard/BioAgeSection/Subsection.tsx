@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import SubsectionSkeleton from "../../Skeleton/Skeleton";
 import { SubsectionProps } from "@/types";
 
+/**
+ * Reusable Subsection component
+ */
 export default function Subsection({ title, children }: SubsectionProps) {
   const [isLoading, setIsLoading] = useState(true);
   const [showSkeleton, setShowSkeleton] = useState(true);

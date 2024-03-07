@@ -4,6 +4,9 @@ import { AgeProps } from "@/types";
 
 const ChronoTimePie = dynamic(() => import('./ChronoTimePie'), { ssr: false });
 
+/**
+ * Chrono Time Subsection
+ */
 export default function ChronoTime({ ages }: AgeProps) {
   const { chronoAge, bioAge } = ages;
   const agingRate = (bioAge / chronoAge) * 100;
